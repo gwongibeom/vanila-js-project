@@ -14,7 +14,7 @@ const dateConvertToFormatString = (propDate) => {
 const watchConvertToFormatString = (propDate) => {
   const date = new Date(propDate)
   const hour =
-    date.getHours() > 12 ? `0${date.getHours() - 12}` : date.getHours()
+    String(date.getHours()).length < 2 ? `0${date.getHours()}` : date.getHours()
   const minute =
     String(date.getMinutes()).length < 2
       ? `0${date.getMinutes()}`
@@ -32,8 +32,6 @@ const watchConvertToFormatString = (propDate) => {
 const setWatch = () => {
   $dateText.innerText = dateConvertToFormatString(new Date())
   $watchText.innerText = watchConvertToFormatString(new Date())
-
-  console.log('setWatch')
 }
 
 setInterval(setWatch, 1000)

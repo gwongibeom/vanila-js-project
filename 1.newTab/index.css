@@ -19,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   backdrop-filter: blur(3px);
+  gap: 15px;
 }
 
 .watch-wrapper {
@@ -57,4 +58,72 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 6px;
+}
+
+.todolist-wrapper > .todo-form {
+  display: flex;
+  width: 300px;
+  gap: 6px;
+}
+
+.todo-form > .todo-input {
+  flex: 9;
+  height: 40px;
+  padding: 0px 12px;
+  background-color: rgba(200, 200, 200, 0.7);
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+}
+
+.todo-form > .todo-btn {
+  flex: 1;
+  border: 0;
+  background-color: rgba(200, 200, 200, 0.7);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.todo-btn:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.todo-form > .todo-btn {
+  flex: 1;
+  border: 0;
+  background-color: rgba(200, 200, 200, 0.7);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 200ms;
+  font-size: 1.2rem;
+}
+
+.todo-btn:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.todolist-ul > li > button {
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 0;
+  background-color: rgba(200, 200, 200, 0.7);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 200ms;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.todolist-ul > li {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.todolist-ul > li > span {
+  font-size: 1.4rem;
 }

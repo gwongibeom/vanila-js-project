@@ -14,7 +14,6 @@ const getRandomQuote = async () => {
 const setRandomQuote = async () => {
   try {
     const quoteText = await getRandomQuote()
-    console.log(quoteText)
     $quoteText.innerText = `"${quoteText}"`
   } catch (error) {
     console.error(error)
