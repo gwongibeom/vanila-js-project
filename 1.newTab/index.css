@@ -8,6 +8,7 @@
 }
 .background {
   background-size: cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.5));
 }
 
 .wrapper {
@@ -29,9 +30,11 @@
 }
 
 .watch-wrapper > h3 {
+  text-align: center;
   font-size: 6rem;
 }
 .watch-wrapper > p {
+  text-align: center;
   font-size: 1.4rem;
   font-weight: 500;
 }
@@ -44,6 +47,7 @@
 }
 
 .quotes-wrapper > p {
+  text-align: center;
   font-size: 1.4rem;
   font-weight: 500;
 }
