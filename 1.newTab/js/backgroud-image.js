@@ -10,7 +10,6 @@ const getRandomImage = async (AccessKey) => {
   try {
     const APIResponse = await fetch(url)
     const data = await APIResponse.json()
-    console.log(data)
     return data.urls.regular
   } catch (err) {
     return data.urls.regular

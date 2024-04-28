@@ -31,6 +31,10 @@
 .watch-wrapper > h3 {
   font-size: 6rem;
 }
+.watch-wrapper > p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
 
 .quotes-wrapper {
   display: flex;
@@ -41,6 +45,7 @@
 
 .quotes-wrapper > p {
   font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .todolist-wrapper {
